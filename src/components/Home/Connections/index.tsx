@@ -1,24 +1,29 @@
-import styles from "./styles.module.css"
+import { ConnectionsContainer, HeaderContainer, CardsContainer, CardContainer, LinkConnection, TitleSpan } from "./styles.ts";
 
-export default function Connections({ title, number }) {
+type Props = {
+    title: string,
+    number: string,
+  };
+
+export default function Connections({ title, number }: Props) {
     return (
-        <div className={styles.connections}>
-            <div className={styles.header}>
-                <span><strong>{title}</strong></span>
+        <ConnectionsContainer>
+            <HeaderContainer>
+                <TitleSpan><strong>{title}</strong></TitleSpan>
                 <span><strong>{number}</strong></span>
-            </div>
-            <div className={styles.cards}>
-                <div className={styles.card} />
-                <div className={styles.card} />
-                <div className={styles.card} />
-                <div className={styles.card} />
-                <div className={styles.card} />
-                <div className={styles.card} />
-            </div>
-            <div className={styles.footer}>
+            </HeaderContainer>
+            <CardsContainer>
+                <CardContainer />
+                <CardContainer />
+                <CardContainer />
+                <CardContainer />
+                <CardContainer />
+                <CardContainer />
+            </CardsContainer>
+            <LinkConnection>
                 <hr />
                 <a><strong>Ver todos</strong></a>
-            </div>
-        </div>
+            </LinkConnection>
+        </ConnectionsContainer>
     )
 }

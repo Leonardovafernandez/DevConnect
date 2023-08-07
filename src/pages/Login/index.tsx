@@ -1,24 +1,24 @@
 import Footer from "../../components/Login/Footer"
 import Hero from "../../components/Login/Hero"
 import LoginForm from "../../components/Login/LoginForm"
-import styles from "./styles.module.css"
+import { BackgroundContainer, ContentContainer, MainContainer, MainHeroContainer, MainLoginContainer, FooterContainer } from "./styles";
 
 export default function Login() {
     return (
-        <div className={styles.background}>
-            <div className={styles.content}>
-                <div className={styles.main}>
-                    <div className={styles["main-hero"]}>
+        <BackgroundContainer>
+            <ContentContainer>
+                <MainContainer>
+                    <MainHeroContainer>
                         <Hero />
-                    </div>
-                    <div className={styles["main-login"]}>
+                    </MainHeroContainer>
+                    <MainLoginContainer>
                         <LoginForm />
-                    </div>
-                </div>
-                <div className={styles.footer}>
+                    </MainLoginContainer>
+                </MainContainer>
+                <FooterContainer>
                     <Footer />
-                </div>
-            </div>
-        </div>
+                </FooterContainer>
+            </ContentContainer>
+        </BackgroundContainer>
     )
 }

@@ -1,4 +1,6 @@
-.home {
+import styled from "styled-components";
+
+export const HomeContainer = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: #D9E6F6;
@@ -7,33 +9,33 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
-}
+`;
 
-.header {
+export const HeaderContainer = styled.div`
     width: 100%;
     height: 48px;
-}
+`;
 
-.content {
+export const ContentContainer = styled.div`
     display: flex;
     gap: 10px;
-}
+`;
 
-.aside {
+export const AsideContainer = styled.div`
     width: 160px;
     height: 545px;
-}
+`;
 
-.main {
+export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 618px;
     gap: 10px;
-}
+`;
 
-.connections {
+export const ConnectionsContainer = styled.div`
     display: flex;
     flex-direction: column;
     width: 312px;
     gap: 10px;
-}
+`;

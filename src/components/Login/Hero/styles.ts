@@ -1,4 +1,6 @@
-.hero {
+import styled from "styled-components";
+
+export const HeroContainer = styled.div`
     height: 100%;
     width: 100%;
     background-color: #ffffff;
@@ -8,24 +10,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
 
-.hero h1 {
-    line-height: 0%;
-}
 
-.hero-image {
+`;
+
+export const HeroImageContainer = styled.div`
     margin-top: 46px;
-}
+`;
 
-.hero-text {
+export const HeroTextContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
 
     margin-top: 42.35px;
-}
+`;
 
-.hero-text strong {
+export const StrongSpan = styled.strong`
     color: #D81D99;
-}
+    font-weight: 700;
+`;

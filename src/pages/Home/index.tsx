@@ -4,30 +4,31 @@ import Dashboard from "../../components/Home/Dashboard";
 import Header from "../../components/Home/Header";
 import Navigation from "../../components/Home/Nagigation";
 import Repositories from "../../components/Home/Repositories";
-import styles from "./styles.module.css";
+import { HomeContainer, HeaderContainer, ContentContainer, AsideContainer, MainContainer, ConnectionsContainer } from "./styles";
+
 
 export default function Home() {
     return (
-        <div className={styles.home}>
-            <div className={styles.header}>
+        <HomeContainer>
+            <HeaderContainer>
                 <Header />
-            </div>
-            <div className={styles.content}>
-                <div className={styles.aside}>
+            </HeaderContainer>
+            <ContentContainer>
+                <AsideContainer>
                     <Navigation />
-                </div>
+                </AsideContainer>
 
-                <div className={styles.main}>
+                <MainContainer>
                     <Dashboard />
                     <Action />
                     <Repositories />
-                </div>
+                </MainContainer>
                 
-                <div className={styles.connections}>
+                <ConnectionsContainer>
                     <Connections title={"Seguindo"} number={"(216)"} />
                     <Connections title={"Seguidores"} number={"(1.1k)"} />
-                </div>
-            </div>
-        </div>
+                </ConnectionsContainer>
+            </ContentContainer>
+        </HomeContainer>
     )
 }

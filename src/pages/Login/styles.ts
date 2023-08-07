@@ -1,35 +1,37 @@
-.background {
+import styled from "styled-components";
+
+export const BackgroundContainer = styled.div`
     background-color: #D9E6F6;
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+`;
 
-.content {
+export const ContentContainer = styled.div`
     width: 82%;
     display: flex;
     flex-direction: column;
     gap: 16px;
-}
+`;
 
-.main {
+export const MainContainer = styled.div`
     width: 100%;
     height: 368px;
     display: flex;
     gap: 12px;
-}
+`;
 
-.main-hero {
+export const MainHeroContainer = styled.div`
     width: 66%;
-}
+`;
 
-.main-login {
+export const MainLoginContainer = styled.div`
     width: 33%;
-}
+`;
 
-.footer {
+export const FooterContainer = styled.div`
     width: 100%;
     height: 27px;
-}
+`;
